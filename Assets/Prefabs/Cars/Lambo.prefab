@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 199104233983791724}
   - component: {fileID: 7207788189104395081}
   - component: {fileID: 5575864840028737472}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &199104233983791724
 Transform:
   m_ObjectHideFlags: 0
@@ -63,7 +63,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1847
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -235,7 +235,7 @@ Transform:
   m_LocalScale: {x: 4, y: 1, z: 8}
   m_Children: []
   m_Father: {fileID: 7034345463644335877}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &37915646790507240
 MeshFilter:
@@ -316,7 +316,7 @@ Transform:
   - {fileID: 8098670519086355989}
   - {fileID: 595441579638001100}
   m_Father: {fileID: 7034345463644335877}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5052593696620827279
 GameObject:
@@ -349,36 +349,6 @@ Transform:
   - {fileID: 7034345463644335887}
   - {fileID: 7034345463644335885}
   - {fileID: 7034345463644335883}
-  m_Father: {fileID: 7034345463644335877}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5122885762192469142
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8835438142802459836}
-  m_Layer: 10
-  m_Name: CenterOfMass
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8835438142802459836
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5122885762192469142}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.31103182, y: 0.097, z: 0.237}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
   m_Father: {fileID: 7034345463644335877}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -570,13 +540,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7034345463643976485}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 13.73}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7034345463644335879}
   - {fileID: 7034345463644335875}
   - {fileID: 199104233983791724}
-  - {fileID: 8835438142802459836}
   - {fileID: 5451450296026393472}
   - {fileID: 1996608830199183283}
   - {fileID: 8706424516061617146}
@@ -620,7 +589,7 @@ MonoBehaviour:
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
   m_BehaviorType: 0
-  m_BehaviorName: My Behavior
+  m_BehaviorName: CarGame
   TeamId: 0
   m_UseChildSensors: 1
   m_ObservableAttributeHandling: 0
@@ -640,7 +609,7 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  maxAcceleration: 15
+  maxAcceleration: 21
   turnSensitivity: 1
   maxSteerAngle: 40
   centerOfMass: {x: 0, y: 0.3, z: 0}
@@ -660,12 +629,7 @@ MonoBehaviour:
   resetOnCollision: 1
   hitWall: 2
   score: 0
-  Colliders:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  Colliders: []
   scoreText: {fileID: 0}
 --- !u!114 &8427090931532672860
 MonoBehaviour:
