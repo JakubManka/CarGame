@@ -139,4 +139,9 @@ public class MenuManager : MonoBehaviour
             Destroy(menu);
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
 }

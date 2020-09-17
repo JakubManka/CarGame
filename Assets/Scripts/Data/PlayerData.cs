@@ -20,13 +20,13 @@ public class PlayerData
             maps.Add(0);
 
         
-        cars.Add(Ecars.Cybertruck, 1);
-        cars.Add(Ecars.F1, 1);
-        cars.Add(Ecars.F2, 1);
+        cars.Add(Ecars.Cybertruck, 0);
+        cars.Add(Ecars.F1, 0);
+        cars.Add(Ecars.F2, 0);
         cars.Add(Ecars.Ford, 1);
-        cars.Add(Ecars.Lambo, 1);
+        cars.Add(Ecars.Lambo, 0);
 
-        money = 210;
+        money = 0;
 
         choosedCar = Ecars.Ford;
     }
