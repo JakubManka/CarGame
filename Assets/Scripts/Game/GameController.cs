@@ -79,7 +79,7 @@ public class GameController : MonoBehaviour
     void FinishRace()
     {
         laps = countLaps.Laps;
-        if (laps[0] == 1)
+        if (laps[0] == 4)
         {
             finishCanvas.SetActive(true);
             hud.SetActive(false);
@@ -89,17 +89,17 @@ public class GameController : MonoBehaviour
             
             raceFinished = true;
         }
-        if (laps[1] == 1)
+        if (laps[1] == 4)
         {
             place++;
             laps[1] = 100;
         }
-        if (laps[2] == 1)
+        if (laps[2] == 4)
         {
             place++;
             laps[2] = 100;
         }
-        if (laps[3] == 1)
+        if (laps[3] == 4)
         {
             place++;
             laps[3] = 100;
